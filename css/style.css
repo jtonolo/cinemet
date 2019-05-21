@@ -1,0 +1,172 @@
+h1{
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+}
+      
+  .bg1{
+    background-color: #474747;
+    margin-top:0;
+}
+.img{
+  height:100vh;
+  object-fit: cover;
+} 
+
+#Navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+   width:70%;
+   margin:auto;
+   font-weight:bolder;
+   font-family: 'Poiret One', cursive;
+}
+
+#link_nav{
+    position: absolute;
+    z-index:99;
+    display:flex;
+   flex-direction: row;
+   padding-left:3%;
+  
+   background-color: #50505080 ;
+   font-size: 1.8em;
+}
+
+
+
+#link_nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#Navbar a{
+    padding:5px;
+  
+}
+
+#link_nav a:hover{
+    background-color:#505050;
+}
+.m-nav-toggle {
+  width: 30px;
+  height: 23px;
+  margin-left: 60%;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+span.m-toggle-icon,
+span.m-toggle-icon:before,
+span.m-toggle-icon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  position: relative;
+}
+
+span.m-toggle-icon:before {
+  top: 10px;
+}
+
+span.m-toggle-icon:after {
+  top: -13px;
+}
+
+#Navbar.is-open {
+  transform: translateY(0);
+}
+
+
+.img_caroussel{
+    width:250px;
+    height: 400px;
+    object-fit:cover;
+}
+
+
+.carousel {
+    position: relative;
+    background: #474747;
+    padding-bottom:2%;
+    
+    
+  }
+  
+  .carousel-cell {
+    width: auto;
+    height:auto;
+    margin-right:15px;
+    background: transparent;
+    counter-increment: gallery-cell;
+  }
+  
+  .carousel-cell.is-selected {
+    
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+   
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+
+  .parallax-window {
+    min-height: 450px;
+    background: transparent;
+}
+
+/*------------------------------
+----pour le footer------
+-------------------------------*/
+#footer {
+    background-color: #434343;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  #footer a {
+    color: white;
+  
+  }
+  
+  
+  /*----------------------------------
+  ----------media query----------------
+  ----------------------------------*/
+  
+  @media only screen and (max-width: 1199px) {
+  
+  }
+  
+  @media only screen and (max-width: 880px) {
+  
+  
+  @media only screen and (max-width: 767px) {
+    .m-nav-toggle {
+      margin-left: 30%;
+    }
+    #Navbar{
+      display:none;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+  
+    }
+    @media only screen and (max-width: 576px) {
+   
+      .m-nav-toggle {
+        margin-left: 15%;
+      }
+
+      }
